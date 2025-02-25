@@ -1,0 +1,10 @@
+p{
+    font-size: 20px;
+    font-family:'Courier New', Arial, Helvetica, sans-serif
+}
+p:hover{
+    background-color: rgb(159, 21, 26);
+}
+p:hover::first-letter{
+    font-size: 50px;
+}
