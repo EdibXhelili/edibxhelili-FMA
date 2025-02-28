@@ -1,0 +1,15 @@
+#span-1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#span-2 {
+    font-size: 250px;
+    float: left;
+    margin-right: 10px;
+    line-height: 0.7;
+    text-decoration: underline rgb(7, 87, 237);
+   
+}
+h1 {text-align: center;}
+p{ background-color: rgb(205, 5, 5);}

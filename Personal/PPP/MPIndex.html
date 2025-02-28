@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c3b51fff17.js" crossorigin="anonymous"></script>
+    <style>
+        nav {
+            background-color: rgb(241, 241, 241);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            height: 100px;
+            overflow: hidden;
+            font-family: 'Bebas Neue', sans-serif;
+            background: linear-gradient(to right, #ffffff, #f0f0f0);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .ML {
+            width: 300px;
+            display: block;
+            mix-blend-mode: multiply;
+            margin-left: 90px;
+        }
+
+        .as {
+            display: flex;
+            gap: 30px;
+            font-size: 25px;
+        }
+
+        .as a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .sgi,
+        .sgu {
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .sgi:hover,
+        .sgu:hover {
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+            background-color: white;
+            color: black;
+        }
+
+        .snisnu a {
+            color: white;
+        }
+
+        .snisnu a:hover {
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+        }
+
+        .selak a {
+            margin-right: 40px;
+        }
+
+        .home,
+        .cont,
+        .sup {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .home::after,
+        .cont::after,
+        .sup::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            transition: width 0.3s ease-in-out;
+            background-color: black;
+        }
+
+        .home:hover::after,
+        .cont:hover::after,
+        .sup:hover::after {
+            width: 100%;
+        }
+        .infocontanier{
+            position: relative;
+            display: inline-block;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <figure>
+                <img src="Screenshot 2025-02-25 213837.png" class="ML">
+            </figure>
+            <div class="as">
+                <div class="selak">
+                    <a href="#" class="home">HOME</a>
+                    <a href="#" class="sup">SUPPORT</a>
+                    <a href="#" class="cont">CONTACT</a>
+                </div>
+                <div class="snisnu">
+                    <a href="#" class="sgi">SignIn</a>
+                    <a href="#" class="sgu">SignUp</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="loginform">
+            <h1>Log in</h1>
+            <div class="infocontanier">
+                <i class="fa-solid fa-circle-user"></i>
+                <input type="email" class="info" placeholder="Email">
+            </div>
+            <input type="password" class="info" placeholder="Password">
+
+        </div>
+    </main>
+</body>
+
+</html>
