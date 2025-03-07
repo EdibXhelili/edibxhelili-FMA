@@ -104,10 +104,37 @@
         .sup:hover::after {
             width: 100%;
         }
-        .infocontanier{
-            position: relative;
+
+        main {
+            background-image: url(background.jpg);
+            background-size: 100vh;
+            text-align: center;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            height: 50vh;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        main a {
             display: inline-block;
-            width: 250px;
+            padding: 15px 30px;
+            border: 1px solid black;
+            border-radius: 35px;
+            background-color: gray;
+            font-size: 25px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.9);
+            text-align: center;
         }
     </style>
 </head>
@@ -132,15 +159,18 @@
         </nav>
     </header>
     <main>
-        <div class="loginform">
-            <h1>Log in</h1>
-            <div class="infocontanier">
-                <i class="fa-solid fa-circle-user"></i>
-                <input type="email" class="info" placeholder="Email">
-            </div>
-            <input type="password" class="info" placeholder="Password">
+        <a href="#">Get Started!</a>
+        <ul>
+            <li>
+                <h1></h1>
+            </li>
+            <li>
 
-        </div>
+            </li>
+            <li>
+
+            </li>
+        </ul>
     </main>
 </body>
 
