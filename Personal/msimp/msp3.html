@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 400px;
+            width: 250px;
+            border: 10px solid;
+            border-radius: 20px;
+        }
+        .card1{
+            position: relative;
+            animation: cardss 5s ease-in-out infinite;
+        }
+        .card2{
+            position: absolute;
+            background-color: blue;
+            transform: rotate(15deg);
+            left: 500px;
+            animation: cardss 5s ease-in-out infinite;
+        }
+        .card3{
+            position: absolute;
+            background-color: rgb(255, 0, 0);
+            transform: rotate(30deg);
+            left: 520px;
+            animation: cardss 5s ease-in-out infinite;
+        }
+        @keyframes cardss{
+            0%{
+                transform: rotateX(50deg) rotateY(50deg) rotateZ(50deg);
+            }
+            33%{
+                transform: rotateX(120deg) rotateY(120deg) rotateZ(120deg)
+            }
+            67%{
+                transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg)
+            }
+            100%{
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card1">
+    </div>
+    <div class="card2">
+    </div>
+    <div class="card3">
+    </div>
+</body>
+</html>

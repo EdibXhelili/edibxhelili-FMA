@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(19, 19, 19);
+        }
+
+        .contanier {
+            display: flex;
+            background-color: rgb(32, 32, 32);
+            margin: 50px;
+            height: fit-content;
+            width: fit-content;
+            padding: 100px;
+            border-radius: 25px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: rgb(241, 241, 241);
+            margin: 10px;
+            width: 270px;
+            height: 400px;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .card-image1 {
+            background-size: cover;
+            background-repeat: none;
+            background-image: url(https://th.bing.com/th/id/R.a1de43be3ba81352606c36fabdf1b23a?rik=m9hMyNuo61tDLA&pid=ImgRaw&r=0);
+            height: 150px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card-image2 {
+            background-size: cover;
+            background-repeat: none;
+            background-image: url(https://cdn.botb.com/media/28078/brabus-c63s-650-2.jpg);
+            height: 150px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card-image3 {
+            background-size: cover;
+            background-repeat: none;
+            background-image: url(https://th.bing.com/th/id/OIP.o1hou839GLQStCCGvX1P0AHaE6?w=287&h=190&c=7&r=0&o=5&pid=1.7);
+            height: 150px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card input {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            border: none;
+            background-color: rgb(32, 32, 32);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="card">
+            <div class="card-image1"></div>
+            <h1>Car 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis dolorem tenetur, iusto
+                provident consequuntur reiciendis quos minima molestias ab doloremque nulla, adipisci repellendus rem
+                cumque officia tempora, mollitia incidunt!</p>
+            <input type="button" value="Leran More">
+        </div>
+        <div class="card">
+            <div class="card-image2"></div>
+            <h1>Car 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque autem temporibus quis maxime! Autem
+                rerum culpa mollitia quos quisquam quaerat pariatur, ullam recusandae tenetur iusto, esse, accusamus
+                incidunt deserunt necessitatibus?</p>
+            <input type="button" value="Leran More">
+        </div>
+        <div class="card">
+            <div class="card-image3"></div>
+            <h1>Car 1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores veniam error quae aut quidem
+                voluptatem possimus, eos delectus beatae recusandae! Veniam enim, fuga culpa ex quod cupiditate
+                distinctio commodi velit.t</p>
+            <input type="button" value="Leran More">
+        </div>
+    </div>
+</body>
+
+</html>

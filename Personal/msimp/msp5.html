@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loading{
+            width: 100px;
+            height: 100px;
+            border: 10px solid aqua;
+            box-shadow: 0 0 8px aqua, 0 0 8px aqua inset;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 10;
+            translate: -50% -50%;
+            animation: 2s loading ease-in-out infinite;
+        }
+        *{
+            background-color: rgb(20, 20, 20);
+        }
+        @keyframes loading{
+            0%{
+                transform: rotateX(0);
+            }
+            33%{
+                transform: rotateX(180deg);
+            }
+            67%{
+                transform: rotateX(180deg) rotateY(180deg);
+            }
+            100%{
+                transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading"></div>
+</body>
+</html>
